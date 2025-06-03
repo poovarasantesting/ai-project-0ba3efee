@@ -1,14 +1,16 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Toaster } from "@/components/ui/toaster";
-import Contact from "./pages/Contact";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Toaster } from "./components/ui/toaster";
+import Dashboard from "./pages/Dashboard";
 
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Contact />} />
+        <Route path="/" element={<Dashboard />} />
       </Routes>
       <Toaster />
     </BrowserRouter>
   );
 }
+
+export default App;
